@@ -78,19 +78,6 @@
                  :aria-label="$t('nav.faq')">
                 {{ $t('nav.faq') }}
               </a>
-              <a href="#donors" 
-                 @click.prevent="scrollToSection('donors')" 
-                 class="inline-flex items-center px-1 pt-1 text-lg font-medium text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-white cursor-pointer"
-                 :aria-label="$t('nav.donors', '捐赠墙')">
-                {{ $t('nav.donors', $i18n.locale === 'en' ? 'Supporters' : '捐赠墙') }}
-              </a>
-              <a href="#" 
-                 @click.prevent="showDonateModal" 
-                 class="inline-flex items-center px-1 pt-1 text-lg font-medium text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-white cursor-pointer"
-                 :aria-label="$t('nav.donate', '支持作者')">
-                <UIcon name="solar:heart-bold" class="text-red-500 dark:text-red-400 size-5 mr-1" />
-                {{ $t('nav.donate', $i18n.locale === 'en' ? 'Support Author' : '支持作者') }}
-              </a>
             </div>
           </div>
           
@@ -133,18 +120,6 @@
              class="block pl-3 pr-4 py-2 text-lg font-medium text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-white cursor-pointer"
              :aria-label="$t('nav.faq')">
             {{ $t('nav.faq') }}
-          </a>
-          <a href="#donors" 
-             @click.prevent="scrollToSection('donors'); isMobileMenuOpen = false" 
-             class="block pl-3 pr-4 py-2 text-lg font-medium text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-white cursor-pointer"
-             :aria-label="$t('nav.donors', '捐赠墙')">
-            {{ $t('nav.donors', '捐赠墙') }}
-          </a>
-          <a href="#" 
-             @click.prevent="showDonateModal(); isMobileMenuOpen = false" 
-             class="block pl-3 pr-4 py-2 text-lg font-medium text-gray-500 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-white cursor-pointer"
-             :aria-label="$t('nav.donate', '支持作者')">
-            {{ $t('nav.donate', '支持作者') }}
           </a>
           <!-- 在移动菜单中添加语言切换和主题切换 -->
           <div class="pl-3 pr-4 py-2">
@@ -574,40 +549,6 @@
           </div>
         </div>
       </section>
-
-      <!-- 捐赠者感谢墙 -->
-      <section ref="donorsRef" id="donors" class="py-12 border-t border-gray-100 dark:border-gray-700 mt-8" aria-labelledby="donors-heading" data-aos="fade-up" data-aos-duration="800">
-        <h2 id="donors-heading" class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-4">
-          {{ $t('donors.titlePrefix') }}<span class="text-purple-600 dark:text-purple-400">{{ $t('donors.titleHighlight') }}</span>
-        </h2>
-        <p class="text-lg text-gray-600 dark:text-gray-300 text-center max-w-3xl mx-auto mb-12">
-          {{ $t('donors.description') }}
-        </p>
-        
-        <div class="max-w-6xl mx-auto">
-          <!-- 捐赠者展示区域 -->
-          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-            <!-- 捐赠者项 -->
-            <div v-for="(donor, index) in donors" :key="index" class="flex flex-col items-center bg-white dark:bg-gray-800 p-5 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 dark:border-gray-700 group">
-              <div class="w-20 h-20 rounded-full bg-indigo-50 dark:bg-indigo-900/30 flex items-center justify-center mb-4 overflow-hidden group-hover:ring-2 ring-indigo-500 transition-all group-hover:rotate-6">
-                <UIcon name="fluent-color:person-24" class="size-16 transition-transform duration-300 group-hover:scale-110" />
-              </div>
-              <h3 class="font-medium text-gray-900 dark:text-gray-100 text-center mb-1 text-lg">{{ donor.name }}</h3>
-              <p v-if="donor.amount" class="text-xl text-indigo-600 dark:text-indigo-400 font-bold py-1 px-3 bg-indigo-50 dark:bg-indigo-900/30 rounded-full mb-1">¥{{ donor.amount }}</p>
-              <p v-if="donor.message" class="text-sm text-gray-500 dark:text-gray-400 mt-1 text-center">{{ donor.message }}</p>
-            </div>
-            
-            <!-- "成为支持者"卡片 -->
-            <div class="flex flex-col items-center justify-center bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/30 dark:to-purple-900/30 p-5 rounded-xl shadow-sm hover:shadow-md transition-all border border-dashed border-indigo-200 dark:border-indigo-700 cursor-pointer group" @click="showDonateModal">
-              <div class="w-20 h-20 rounded-full bg-white dark:bg-gray-800 flex items-center justify-center mb-4 group-hover:rotate-6 transition-all">
-                <UIcon name="solar:heart-bold" class="text-red-500 dark:text-red-400 size-8 transition-transform duration-300 group-hover:scale-125" />
-              </div>
-              <h3 class="font-medium text-indigo-600 dark:text-indigo-400 text-center text-lg group-hover:text-indigo-700 dark:group-hover:text-indigo-300 transition-colors">{{ $t('donors.becomeDonor') }}</h3>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- 常见问题部分 -->
       <section ref="faqRef" id="faq" class="py-12 border-t border-gray-100 dark:border-gray-700 mt-8" aria-labelledby="faq-heading" data-aos="fade-up" data-aos-duration="800">
         <h2 id="faq-heading" class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">{{ $t('faq.title') }}</h2>
@@ -711,21 +652,12 @@
                    :aria-label="$t('nav.howto')">
                   {{ $t('nav.howto') }}
                 </a>
-              </li>
-              <li>
+              </li>              <li>
                 <a href="#faq" 
                    @click.prevent="scrollToSection('faq')" 
                    class="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 cursor-pointer"
                    :aria-label="$t('nav.faq')">
                   {{ $t('nav.faq') }}
-                </a>
-              </li>
-              <li>
-                <a href="#donors" 
-                   @click.prevent="scrollToSection('donors')" 
-                   class="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 cursor-pointer"
-                   :aria-label="$t('nav.donors', '捐赠墙')">
-                  {{ $t('nav.donors', '捐赠墙') }}
                 </a>
               </li>
             </ul>
@@ -849,60 +781,6 @@
         </div>
       </div>
     </div>
-
-    <!-- 赞赏码模态框 -->
-    <div v-if="isDonateModalOpen" class="fixed inset-0 z-50">
-      <!-- 半透明阴影遮罩 -->
-      <div
-        class="absolute inset-0 pointer-events-auto"
-        style="background: radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.25) 70%, rgba(0,0,0,0.45) 100%); backdrop-filter: blur(2px); transition: background 0.3s;"
-        @click="isDonateModalOpen = false"
-      ></div>
-      <!-- 弹窗内容 -->
-      <div class="relative z-10 flex items-center justify-center min-h-screen">
-        <div
-          class="bg-white dark:bg-gray-800 rounded-xl shadow-2xl p-8 max-w-[850px] w-full m-4 border-2 border-gray-200 dark:border-gray-700"
-          @click.stop
-        >
-          <div class="flex justify-between items-center mb-6">
-            <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100 flex items-center gap-2">
-              <UIcon name="solar:heart-bold" class="text-red-500 dark:text-red-400 size-6" />
-              {{ $t('donate.title', $i18n.locale === 'en' ? 'Support Author' : '支持作者') }}
-            </h3>
-            <button @click="isDonateModalOpen = false" class="text-gray-500 hover:text-gray-700">
-              <UIcon name="solar:close-circle-bold" class="size-9" />
-            </button>
-          </div>
-          <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 text-center max-w-2xl mx-auto">
-            {{ $t('donate.description', $i18n.locale === 'en' ? 'If you find this tool helpful, consider buying the author a coffee. Thank you for your support!' : '如果您觉得这个工具对您有帮助，可以考虑请作者喝杯咖啡，感谢您的支持！') }}
-          </p>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="flex flex-col items-center">
-              <div class="bg-white p-3 rounded-lg shadow-md mb-3">
-                <img src="/wx_20250430155250.png" alt="微信赞赏码" class="w-[350px] h-[350px] object-cover" />
-              </div>
-              <p class="text-base text-gray-500 dark:text-gray-400">{{ $t('donate.wechat', $i18n.locale === 'en' ? 'WeChat Pay' : '微信支付') }}</p>
-            </div>
-            <div class="flex flex-col items-center">
-              <div class="bg-white p-3 rounded-lg shadow-md mb-3">
-                <img src="/zfb_20250430155312.png" alt="支付宝赞赏码" class="w-[350px] h-[350px] object-cover" />
-              </div>
-              <p class="text-base text-gray-500 dark:text-gray-400">{{ $t('donate.alipay', $i18n.locale === 'en' ? 'Alipay' : '支付宝') }}</p>
-            </div>
-          </div>
-          <div class="text-center mt-8">
-            <p class="text-lg font-bold text-red-600 dark:text-red-400 tracking-wide">
-              <template v-if="$i18n.locale === 'en'">
-                We solemnly promise: For a better user experience, <span class="underline">no ads will ever be added</span> to this site! Thank you for your trust and support!
-              </template>
-              <template v-else>
-                本站郑重承诺：为了给您营造更好的体验，<span class="underline">永不添加任何广告</span>！感谢您的信任与支持！
-              </template>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -982,16 +860,6 @@ const notification = reactive({
   type: 'success' as 'success' | 'error'
 })
 
-// 捐赠者数据
-const donors = ref([
-  { 
-    name: "3岁有尾巴", 
-    avatar: null, 
-    amount: 5, 
-    message: "临时邮箱牛逼普拉斯！" 
-  }
-])
-
 const config = useRuntimeConfig();
 
 // 导航和落地页相关
@@ -1004,7 +872,6 @@ const appRef = ref<HTMLElement | null>(null)
 const featuresRef = ref<HTMLElement | null>(null)
 const howToRef = ref<HTMLElement | null>(null)
 const faqRef = ref<HTMLElement | null>(null)
-const donorsRef = ref<HTMLElement | null>(null)
 
 // HTML 安全相关
 const isSafeHtml = ref(false)
@@ -1012,7 +879,6 @@ const sanitizedHtml = ref('')
 
 // 模态框状态
 const isContactModalOpen = ref(false)
-const isDonateModalOpen = ref(false)
 
 // 滚动到指定部分
 function scrollToSection(section: string): void {
@@ -1033,12 +899,8 @@ function scrollToSection(section: string): void {
       break
     case 'how-to':
       targetRef = howToRef.value
-      break
-    case 'faq':
+      break    case 'faq':
       targetRef = faqRef.value
-      break
-    case 'donors':
-      targetRef = donorsRef.value
       break
   }
   
@@ -1450,11 +1312,6 @@ function formatDate(timestamp: number | string): string {
 // 显示联系我们模态框
 function showContactModal() {
   isContactModalOpen.value = true
-}
-
-// 显示赞赏码模态框
-function showDonateModal() {
-  isDonateModalOpen.value = true
 }
 
 // 复制文本

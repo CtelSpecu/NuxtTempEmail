@@ -10,12 +10,10 @@
     "light": "Switch to Light",
     "dark": "Switch to Dark"
   },
-  "appName": "Temp Email",
-  "nav": {
+  "appName": "Temp Email",  "nav": {
     "features": "Features",
     "howto": "How To",
-    "faq": "FAQ",
-    "donors": "Supporters"
+    "faq": "FAQ"
   },
   "hero": {
     "title": "Fast & Secure Temporary Email Protect Your Privacy",
@@ -227,16 +225,9 @@
     "qq": {
       "label": "QQ",
       "number": "2668812066"
-    },
-    "email": {
+    },    "email": {
       "label": "Email",
       "address": "2668812066"
     }
-  },
-  "donors": {
-    "titlePrefix": "Thank Our ",
-    "titleHighlight": "Supporters",
-    "description": "Heartfelt thanks to the following supporters for their generous donations. Your support is our motivation to keep improving!",
-    "becomeDonor": "Become a Supporter"
   }
 }
