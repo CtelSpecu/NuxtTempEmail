@@ -9,7 +9,7 @@ workers_dev = true
 [[d1_databases]]
 binding = "DB"
 database_name = "temp_email_db"
-database_id = "228e475ca9d5465f93fc5103eb0f1f96"
+database_id = "6fa58cdb-ea0c-45c7-81e6-e254ddced9ba"
 
 [vars]
 WORKER_URL = "https://email-worker.candlespark.workers.dev"
