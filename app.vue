@@ -54,7 +54,7 @@ if (import.meta.server) {
 useHead({
   // 使用函数形式的titleTemplate，更加灵活
   titleTemplate: (pageTitle) => {
-    return pageTitle ? `${pageTitle} - 星空之镜临时邮箱服务` : '临时邮箱 - 星空之镜';
+    return pageTitle ? `${pageTitle} - 免费、安全、即时可用的临时邮箱服务，无需注册即可使用` : '临时邮箱 - 星空之镜';
   },
   htmlAttrs: {
     lang: 'zh-CN',
