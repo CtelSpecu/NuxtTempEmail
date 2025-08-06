@@ -141,33 +141,7 @@
     },
     "step3": {
       "title": "Receive and View Emails",
-      "description": "Click the \"Check New Emails\" button or enable auto-check, and received emails will be displayed in your inbox."
-    }
-  },
-  "testimonials": {
-    "titlePrefix": "User ",
-    "titleHighlight": "Testimonials",
-    "description": "See what our users say about Temp Mail temporary email service and how it helps them protect privacy and improve efficiency.",
-    "user1": {
-      "comment": "Temp Mail has completely changed my online experience. No more spam worries!",
-      "name": "John",
-      "profession": "Freelancer"
-    },
-    "user2": {
-      "comment": "As a developer, Temp Mail makes my testing work much easier. Highly recommended!",
-      "name": "Sarah",
-      "profession": "Software Engineer"
-    },
-    "user3": {
-      "comment": "Simple, fast, and efficient. Temp Mail is the best temporary email service I've ever used.",
-      "name": "Carlos",
-      "profession": "Digital Marketer"
-    },
-    "user4": {
-      "comment": "Protecting privacy has never been easier. Temp Mail makes me feel more secure when registering on various websites.",
-      "name": "Lina",
-      "profession": "Cybersecurity Consultant"
-    }
+      "description": "Click the \"Check New Emails\" button or enable auto-check, and received emails will be displayed in your inbox."    }
   },
   "faq": {
     "title": "Frequently Asked Questions",
@@ -208,16 +182,9 @@
     "description": "Providing fast, secure temporary email services to protect your privacy and keep spam away.",
     "rights": "All rights reserved.",
     "warning": "This service is for lawful purposes only. Sending spam or illegal content is prohibited.",
-    "serviceSuffix": "Service.",
-    "nav": {
+    "serviceSuffix": "Service.",    "nav": {
       "service": "Service",
-      "emailService": "Email Service",
-      "legal": "Legal",
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Service",
-      "disclaimer": "Disclaimer",
-      "contact": "Contact Us",
-      "language": "Language"
+      "emailService": "Email Service"
     }
   },
   "contact": {

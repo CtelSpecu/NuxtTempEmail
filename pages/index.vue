@@ -458,97 +458,9 @@
             <div class="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-indigo-600 dark:bg-indigo-500 text-white flex items-center justify-center font-bold text-lg" aria-hidden="true">3</div>
             <h3 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3 mt-2">{{ $t('howto.step3.title') }}</h3>
             <p class="text-gray-600 dark:text-gray-300 mb-4">{{ $t('howto.step3.description') }}</p>
-          </article>
-        </div>
+          </article>        </div>
       </section>
 
-       <!-- 用户评价部分 -->
-       <section id="testimonials" class="py-12 border-t border-gray-100 dark:border-gray-700 mt-8" aria-labelledby="testimonials-heading">
-        <h2 id="testimonials-heading" class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-4">
-          {{ $t('testimonials.titlePrefix') }}<span class="text-purple-600 dark:text-purple-400">{{ $t('testimonials.titleHighlight') }}</span>
-        </h2>
-        <p class="text-lg text-gray-600 dark:text-gray-300 text-center max-w-3xl mx-auto mb-12">
-          {{ $t('testimonials.description') }}
-        </p>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          <!-- 用户评价1 -->
-          <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition-all border border-gray-100 dark:border-gray-700">
-            <div class="text-purple-500 dark:text-purple-400 mb-4">
-              <UIcon name="heroicons:chat-bubble-left-right" class="size-10" />
-            </div>
-            <p class="text-gray-700 dark:text-gray-300 text-lg mb-6">
-              {{ $t('testimonials.user1.comment') }}
-            </p>
-            <div class="flex items-center">
-              <div class="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center mr-4">
-                <UIcon name="system-uicons:user" class="size-7 text-purple-600 dark:text-purple-400" />
-              </div>
-              <div>
-                <h4 class="font-semibold text-gray-900 dark:text-gray-100">{{ $t('testimonials.user1.name') }}</h4>
-                <p class="text-gray-500 dark:text-gray-400 text-sm">{{ $t('testimonials.user1.profession') }}</p>
-              </div>
-            </div>
-          </div>
-          
-          <!-- 用户评价2 -->
-          <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition-all border border-gray-100 dark:border-gray-700">
-            <div class="text-purple-500 dark:text-purple-400 mb-4">
-              <UIcon name="heroicons:chat-bubble-left-right" class="size-10" />
-            </div>
-            <p class="text-gray-700 dark:text-gray-300 text-lg mb-6">
-              {{ $t('testimonials.user2.comment') }}
-            </p>
-            <div class="flex items-center">
-              <div class="w-12 h-12 rounded-full bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center mr-4">
-                <UIcon name="system-uicons:user" class="size-7 text-indigo-600 dark:text-indigo-400" />
-              </div>
-              <div>
-                <h4 class="font-semibold text-gray-900 dark:text-gray-100">{{ $t('testimonials.user2.name') }}</h4>
-                <p class="text-gray-500 dark:text-gray-400 text-sm">{{ $t('testimonials.user2.profession') }}</p>
-              </div>
-            </div>
-          </div>
-          
-          <!-- 用户评价3 -->
-          <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition-all border border-gray-100 dark:border-gray-700">
-            <div class="text-purple-500 dark:text-purple-400 mb-4">
-              <UIcon name="heroicons:chat-bubble-left-right" class="size-10" />
-            </div>
-            <p class="text-gray-700 dark:text-gray-300 text-lg mb-6">
-              {{ $t('testimonials.user3.comment') }}
-            </p>
-            <div class="flex items-center">
-              <div class="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mr-4">
-                <UIcon name="system-uicons:user" class="size-7 text-emerald-600 dark:text-emerald-400" />
-              </div>
-              <div>
-                <h4 class="font-semibold text-gray-900 dark:text-gray-100">{{ $t('testimonials.user3.name') }}</h4>
-                <p class="text-gray-500 dark:text-gray-400 text-sm">{{ $t('testimonials.user3.profession') }}</p>
-              </div>
-            </div>
-          </div>
-          
-          <!-- 用户评价4（新增） -->
-          <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition-all border border-gray-100 dark:border-gray-700">
-            <div class="text-purple-500 dark:text-purple-400 mb-4">
-              <UIcon name="heroicons:chat-bubble-left-right" class="size-10" />
-            </div>
-            <p class="text-gray-700 dark:text-gray-300 text-lg mb-6">
-              {{ $t('testimonials.user4.comment') }}
-            </p>
-            <div class="flex items-center">
-              <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center mr-4">
-                <UIcon name="system-uicons:user" class="size-7 text-blue-600 dark:text-blue-400" />
-              </div>
-              <div>
-                <h4 class="font-semibold text-gray-900 dark:text-gray-100">{{ $t('testimonials.user4.name') }}</h4>
-                <p class="text-gray-500 dark:text-gray-400 text-sm">{{ $t('testimonials.user4.profession') }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <!-- 常见问题部分 -->
       <section ref="faqRef" id="faq" class="py-12 border-t border-gray-100 dark:border-gray-700 mt-8" aria-labelledby="faq-heading" data-aos="fade-up" data-aos-duration="800">
         <h2 id="faq-heading" class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">{{ $t('faq.title') }}</h2>
@@ -614,8 +526,7 @@
       </section>
 
       <!-- 页脚 -->
-      <footer class="mt-20 pt-10 border-t border-gray-200 dark:border-gray-700">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+      <footer class="mt-20 pt-10 border-t border-gray-200 dark:border-gray-700">        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div class="md:col-span-2">
             <div class="flex items-center mb-4">
               <UIcon name="solar:letter-bold" class="h-8 w-8 text-indigo-600 dark:text-indigo-400" />
@@ -659,47 +570,7 @@
                    :aria-label="$t('nav.faq')">
                   {{ $t('nav.faq') }}
                 </a>
-              </li>
-            </ul>
-          </div>
-          
-          <!-- 法律导航 -->
-          <div>
-            <h3 class="font-semibold text-gray-900 dark:text-gray-100 mb-4">{{ $t('footer.nav.legal') }}</h3>
-            <ul class="space-y-2">
-              <li>
-                <a href="#" 
-                   @click.prevent="scrollToSection('hero')" 
-                   class="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400"
-                   :aria-label="$t('footer.nav.privacy')">
-                  {{ $t('footer.nav.privacy') }}
-                </a>
-              </li>
-              <li>
-                <a href="#" 
-                   @click.prevent="scrollToSection('hero')" 
-                   class="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400"
-                   :aria-label="$t('footer.nav.terms')">
-                  {{ $t('footer.nav.terms') }}
-                </a>
-              </li>
-              <li>
-                <a href="#" 
-                   @click.prevent="scrollToSection('hero')" 
-                   class="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400"
-                   :aria-label="$t('footer.nav.disclaimer')">
-                  {{ $t('footer.nav.disclaimer') }}
-                </a>
-              </li>
-              <li>
-                <a href="#" 
-                   @click.prevent="showContactModal" 
-                   class="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 cursor-pointer"
-                   :aria-label="$t('footer.nav.contact')">
-                  {{ $t('footer.nav.contact') }}
-                </a>
-              </li>
-            </ul>
+              </li>            </ul>
           </div>
         </div>
         
@@ -887,8 +758,7 @@ function scrollToSection(section: string): void {
   
   // 获取对应的部分引用
   let targetRef = null
-  switch (section) {
-    case 'hero':
+  switch (section) {    case 'hero':
       targetRef = heroRef.value
       break
     case 'app':
@@ -899,7 +769,8 @@ function scrollToSection(section: string): void {
       break
     case 'how-to':
       targetRef = howToRef.value
-      break    case 'faq':
+      break
+    case 'faq':
       targetRef = faqRef.value
       break
   }

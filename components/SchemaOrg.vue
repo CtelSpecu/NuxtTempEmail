@@ -152,39 +152,12 @@ useHead({
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.8",
-          "ratingCount": "156"
-        },
+          "ratingCount": "156"        },
         "offers": {
           "@type": "Offer",
           "price": "0",
           "priceCurrency": "CNY"
-        },
-        "review": [
-          {
-            "@type": "Review",
-            "author": {
-              "@type": "Person",
-              "name": "约翰"
-            },
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5"
-            },
-            "reviewBody": "Temp Mail 彻底改变了我的在线体验。再也不用担心垃圾邮件了！"
-          },
-          {
-            "@type": "Review",
-            "author": {
-              "@type": "Person",
-              "name": "莎拉"
-            },
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5"
-            },
-            "reviewBody": "作为开发者，Temp Mail 让我的测试工作变得更加轻松。强烈推荐！"
-          }
-        ]
+        }
       })
     },
     {
