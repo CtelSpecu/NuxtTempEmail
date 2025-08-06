@@ -1,5 +1,5 @@
 {
-  "welcome": "欢迎使用临时邮箱服务",
+  "welcome": "欢迎使用星空之镜临时邮箱服务",
   "description": "免费、安全的临时邮箱地址。",
   "actions": {
     "refresh": "刷新",
@@ -10,18 +10,18 @@
     "light": "切换到浅色",
     "dark": "切换到深色"
   },
-  "appName": "临时邮箱",  "nav": {
+  "appName": "星空之镜",  "nav": {
     "features": "功能特点",
     "howto": "使用说明",
     "faq": "常见问题"
   },
   "hero": {
-    "title": "快速安全的临时邮箱保护您的隐私",
-    "titleHtml": "快速安全的临时邮箱保护您的隐私",
-    "titlePart1": "快速安全的",
+    "title": "星空之镜临时邮箱免费、安全的临时邮箱地址",
+    "titleHtml": "星空之镜临时邮箱免费、安全的临时邮箱地址",
+    "titlePart1": "星空之镜",
     "titlePart2": "临时邮箱",
-    "titlePart3": "保护您的隐私",
-    "description": "无需注册，即可获得一个临时邮箱地址。保护您的真实邮箱免受垃圾邮件的侵扰，适用于测试、注册和一次性使用场景。"
+    "titlePart3": "免费、安全的临时邮箱地址",
+    "description": "Free, secure, instant access to temporary email services, no registration required"
   },
   "app": {
     "emailCard": {
@@ -54,7 +54,7 @@
     "heading": "临时邮箱应用"
   },
   "useCases": {
-    "title": "Temp Mail 应用场景",
+    "title": "临时邮箱应用场景",
     "description": "临时邮箱服务适用于各种在线场景，以下是一些常见的使用案例，帮您保护隐私的同时享受网络便利。",
     "shopping": {
       "title": "网络购物",
@@ -121,12 +121,12 @@
   "newEmailReceived": "收到 {count} 封新邮件 | 收到 {count} 封新邮件",
   "autoCheckStopped": "自动检查已停止",
   "seo": {
-    "title": "临时邮箱 - 免费、安全的一次性电子邮箱服务",
-    "ogTitle": "临时邮箱 - 免费、安全的一次性电子邮箱服务",
-    "description": "使用我们的免费临时邮箱服务，无需注册即可获得一个安全的一次性邮箱地址，保护您的隐私免受垃圾邮件骚扰。",
-    "ogDescription": "使用我们的免费临时邮箱服务，无需注册即可获得一个安全的一次性邮箱地址，保护您的隐私免受垃圾邮件骚扰。",
-    "twitterTitle": "临时邮箱 - 免费、安全的一次性电子邮箱服务",
-    "twitterDescription": "使用我们的免费临时邮箱服务，无需注册即可获得一个安全的一次性邮箱地址，保护您的隐私免受垃圾邮件骚扰。",
+    "title": "临时邮箱 - 星空之镜",
+    "ogTitle": "临时邮箱 - 星空之镜",
+    "description": "免费、安全、即时可用的临时邮箱服务，无需注册即可使用",
+    "ogDescription": "免费、安全、即时可用的临时邮箱服务，无需注册即可使用",
+    "twitterTitle": "临时邮箱 - 星空之镜",
+    "twitterDescription": "免费、安全、即时可用的临时邮箱服务，无需注册即可使用",
     "keywords": "临时邮箱,一次性邮箱,匿名邮箱,隐私保护,垃圾邮件过滤,邮箱注册,验证码邮箱,测试邮箱,邮箱防护,邮箱安全,邮箱工具,邮箱临时,邮箱匿名,邮箱防骚扰"
   },
   "howto": {

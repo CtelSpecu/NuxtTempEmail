@@ -1,5 +1,5 @@
 {
-  "welcome": "Welcome to Temp Email Service",
+  "welcome": "Welcome to CtelSpecu Temp Email Service",
   "description": "Free and secure temporary email address.",
   "actions": {
     "refresh": "Refresh",
@@ -10,17 +10,17 @@
     "light": "Switch to Light",
     "dark": "Switch to Dark"
   },
-  "appName": "Temp Email",  "nav": {
+  "appName": "CtelSpecu",  "nav": {
     "features": "Features",
     "howto": "How To",
     "faq": "FAQ"
   },
   "hero": {
-    "title": "Fast & Secure Temporary Email Protect Your Privacy",
-    "titleHtml": "Fast & Secure Temporary Email Protect Your Privacy",
-    "titlePart1": "Fast & Secure",
+    "title": "CtelSpecu Temporary Email Free and secure temporary Email",
+    "titleHtml": "CtelSpecu Temporary Email Free and secure temporary Email",
+    "titlePart1": "CtelSpecu",
     "titlePart2": "Temporary Email",
-    "titlePart3": "Protect Your Privacy",
+    "titlePart3": "Free and secure temporary Email",
     "description": "Get a temporary email address without registration. Protect your real email from spam, suitable for testing, registration, and one-time use scenarios."
   },
   "app": {
@@ -121,12 +121,12 @@
   "newEmailReceived": "Received {count} new email | Received {count} new emails",
   "autoCheckStopped": "Auto-check stopped",
   "seo": {
-    "title": "Temp Mail - Free, Secure Disposable Email Service",
-    "ogTitle": "Temp Mail - Free, Secure Disposable Email Service",
-    "description": "Use our free temporary email service to get a secure disposable email address without registration, protecting your privacy from spam.",
-    "ogDescription": "Use our free temporary email service to get a secure disposable email address without registration, protecting your privacy from spam.",
-    "twitterTitle": "Temp Mail - Free, Secure Disposable Email Service",
-    "twitterDescription": "Use our free temporary email service to get a secure disposable email address without registration, protecting your privacy from spam.",
+    "title": "Temp Mail - CtelSpecu",
+    "ogTitle": "Temp Mail - CtelSpecu",
+    "description": "Free, secure, instant access to temporary email services, no registration required.",
+    "ogDescription": "Free, secure, instant access to temporary email services, no registration required.",
+    "twitterTitle": "Temp Mail - CtelSpecu",
+    "twitterDescription": "Free, secure, instant access to temporary email services, no registration required.",
     "keywords": "temp mail, temporary email, disposable email, anonymous email, privacy protection, spam filter, email registration, verification email, test email"
   },
   "howto": {
