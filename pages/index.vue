@@ -980,7 +980,7 @@ async function refreshEmail() {
     for (let i = 0; i < 8; i++) {
       username += chars.charAt(Math.floor(Math.random() * chars.length));
     }
-    const address = `${username}@220901.xyz`;
+    const address = `${username}@147586.xyz`;
     emailAddress.value = address
     
     // 保存新生成的邮件地址到 localStorage
