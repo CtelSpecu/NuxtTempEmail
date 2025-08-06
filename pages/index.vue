@@ -922,17 +922,17 @@ definePageMeta({
 
 // 首页特定的SEO设置
 useSeoMeta({
-  title: '临时邮箱 - 免费、安全的一次性电子邮箱服务',
-  ogTitle: '临时邮箱 - 免费、安全的一次性电子邮箱服务',
-  description: '使用我们的免费临时邮箱服务，无需注册即可获得一个安全的一次性邮箱地址，保护您的隐私免受垃圾邮件骚扰。',
-  ogDescription: '使用我们的免费临时邮箱服务，无需注册即可获得一个安全的一次性邮箱地址，保护您的隐私免受垃圾邮件骚扰。',
+  title: '临时邮箱 - 星空之镜',
+  ogTitle: '免费、安全、即时可用的临时邮箱服务，无需注册即可使用',
+  description: '免费、安全、即时可用的临时邮箱服务，无需注册即可使用。',
+  ogDescription: '免费、安全、即时可用的临时邮箱服务，无需注册即可使用。',
   ogImage: '/email-logo.png',
   ogUrl: 'https://temp-email.top',
   ogType: 'website',
   ogLocale: 'zh_CN',
   twitterCard: 'summary_large_image',
-  twitterTitle: '临时邮箱 - 免费、安全的一次性电子邮箱服务',
-  twitterDescription: '使用我们的免费临时邮箱服务，无需注册即可获得一个安全的一次性邮箱地址，保护您的隐私免受垃圾邮件骚扰。',
+  twitterTitle: '临时邮箱 - 星空之镜',
+  twitterDescription: '免费、安全、即时可用的临时邮箱服务，无需注册即可使用',
   twitterImage: '/email-logo.png',
   keywords: '临时邮箱,一次性邮箱,匿名邮箱,隐私保护,垃圾邮件过滤',
 })
