@@ -623,9 +623,9 @@
             <div>
               <div class="font-medium text-gray-900 dark:text-gray-100">{{ $t('contactUs.qq') }}</div>
               <div class="text-gray-600 dark:text-gray-400 group flex items-center gap-1">
-                <span>2668812066</span>
+                <span>candlespark</span>
                 <button 
-                  @click="copyText('2668812066')" 
+                  @click="copyText('candlespark')" 
                   class="ml-2 text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 opacity-70 hover:opacity-100"
                 >
                   <UIcon name="solar:copy-bold" class="size-4" />
@@ -639,9 +639,9 @@
             <div>
               <div class="font-medium text-gray-900 dark:text-gray-100">{{ $t('contactUs.email') }}</div>
               <div class="text-gray-600 dark:text-gray-400 group flex items-center gap-1">
-                <span>2668812066@qq.com</span>
+                <span>candlespark@qq.com</span>
                 <button 
-                  @click="copyText('2668812066@qq.com')" 
+                  @click="copyText('candlespark@qq.com')" 
                   class="ml-2 text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 opacity-70 hover:opacity-100"
                 >
                   <UIcon name="solar:copy-bold" class="size-4" />

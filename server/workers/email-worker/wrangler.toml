@@ -9,11 +9,11 @@ workers_dev = true
 [[d1_databases]]
 binding = "DB"
 database_name = "temp_email_db"
-database_id = "0a1989cd-6f62-4aed-a6d1-31801c927c2c"
+database_id = "228e475ca9d5465f93fc5103eb0f1f96"
 
 [vars]
-WORKER_URL = "https://email-worker.2668812066.workers.dev"
-EMAIL_DOMAIN = "220901.xyz"
+WORKER_URL = "https://email-worker.candlespark.workers.dev"
+EMAIL_DOMAIN = "147586.xyz"
 
 [build]
 command = "npm run build"

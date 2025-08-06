@@ -76,7 +76,7 @@
 ```javascript
 async function clearEmails(emailAddress) {
   try {
-    const WORKER_URL = 'https://email-worker.2668812066.workers.dev';
+    const WORKER_URL = 'https://email-worker.candlespark.workers.dev';
     const url = `${WORKER_URL}/emails/clear?address=${encodeURIComponent(emailAddress.trim())}`;
     
     const response = await fetch(url, { 

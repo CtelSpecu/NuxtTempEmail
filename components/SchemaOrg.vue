@@ -133,7 +133,7 @@ useHead({
         "contactPoint": {
           "@type": "ContactPoint",
           "contactType": "customer service",
-          "email": "2668812066@qq.com"
+          "email": "candlespark@qq.com"
         },
         "sameAs": [
           "https://www.facebook.com/tempemail",
